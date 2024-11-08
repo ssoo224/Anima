@@ -1,0 +1,726 @@
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* الوضع الداكن */
+        .dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .dark-mode .header {
+            background-color: #1a1a1a;
+        }
+
+        .dark-mode .search-bar {
+            background-color: #222;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .dark-mode .search-bar:focus {
+            border-color: #fff;
+        }
+
+        .dark-mode .episode-item {
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .dark-mode .episode-button {
+            background-color: #391789;
+            color: #ffffff;
+        }
+
+        .dark-mode .episode-button:hover {
+            background-color: #333;
+        }
+
+        /* الوضع الفاتح */
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .light-mode .episode-button {
+            background-color: #391789; /* لون خلفية داكن */
+            color: #fff; /* لون النص أبيض */
+        }
+
+        .light-mode .episode-button:hover {
+            background-color: #250d56; /* لون الخلفية عند التمرير */
+        }
+
+        .light-mode .header {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .light-mode .search-bar {
+            background-color: #ffffff;
+            color: #000;
+            border: 2px solid #000;
+        }
+
+        .light-mode .search-bar:focus {
+            border-color: #333;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 26px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 27px;
+            transition: color 1.0s;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar {
+            width: 60%;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 50px;
+            outline: none;
+            border: 2px solid #a832a6;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #a832a6;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-bar::placeholder {
+            color: #aaa;
+        }
+
+        .search-bar:focus::placeholder {
+            color: transparent;
+        }
+
+        .main-content {
+    padding: 30px;
+    text-align: right; /* محاذاة النصوص إلى اليمين */
+}
+
+        .section-container {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    text-align: left; /* محاذاة النص إلى اليسار */
+    padding-left: 20px; /* إضافة تباعد من اليسار */
+    display: flex; /* استخدام Flexbox لترتيب الأيقونة والنص */
+    align-items: center; /* محاذاة عمودية */
+}
+
+.section-title i {
+    margin-right: 14px; /* المسافة بين الأيقونة والنص */
+    font-size: 1.4em; /* حجم الأيقونة */
+    color: #007bb5; /* لون الأيقونة، يمكن تعديله حسب الحاجة */
+}
+
+        .episode-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .episode-list::-webkit-scrollbar {
+            height: 2px;
+        }
+
+        .episode-list::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        .episode-list::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        .episode-item {
+            flex: 0 0 auto;
+            width: 120px;
+        }
+
+        .episode-item img {
+            width: 100%;
+            height: auto;
+            max-height: 170px;
+            object-fit: cover;
+        }
+
+        .episode-item .details {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .episode-item .details span {
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .episode-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal video {
+            width: 80%;
+            height: auto;
+            border: 2px solid #007bb5;
+            border-radius: 4px;
+            z-index: 1001;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .blur-background {
+            filter: blur(4px);
+        }
+
+        .telegram-icon {
+            position: fixed;
+            bottom: 70px;
+            right: 370px;
+            font-size: 60px;
+            color: #87CEEB;
+            cursor: pointer;
+            transition: transform 1.3s;
+        }
+
+        .telegram-icon i {
+            color: #007bb5;
+        }
+
+        .telegram-icon:hover {
+            transform: scale(1.2);
+        }
+
+        #noResultsMessage {
+            display: none;
+            text-align: center;
+            color: red;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* إعدادات القائمة الجانبية */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 0 0 15px 0;
+        }
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .sidebar .close-btn {
+            font-size: 30px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, padding 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+            padding-left: 25px;
+        }
+
+        /* تصغير حجم نصوص عناوين الأقسام */
+        .section-title {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #6C751B;
+            z-index: 1001;
+        }
+
+        .light-mode .menu-toggle {
+            display: block;
+        }
+
+        .hide-search-bar {
+            visibility: hidden;
+        }
+
+        /* قسم المطورين */
+        .developers-section {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .developer-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .developer-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .developer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .developer-item {
+            display: flex;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 10px;
+.developer-item {
+            display: flex;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .developer-item i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .developer-item span {
+            font-size: 16px;
+            color: #fff;
+        }
+        
+        .developer-card {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* المسافة بين الأيقونة والنص */
+    margin-bottom: 100px;
+}
+
+.developer-icon {
+    font-size: 40px; /* حجم الأيقونة */
+    color: #87CEEB; /* اللون */
+}
+
+.developer-info p {
+    margin: 0; /* إزالة الهوامش الافتراضية للنص */
+}
+
+/* CSS لتفادي اختيار النصوص */
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+}
+
+/* CSS لمنع السحب */
+img {
+    pointer-events: none;
+}
+
+        html {
+    touch-action: pan-x pan-y; /* يمنع التكبير والتصغير باستخدام اللمس */
+    
+    }
+    
+    /* القائمة السفلية */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 0;
+    z-index: 1000;
+    box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.5);
+}
+
+.bottom-menu a {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.bottom-menu a:hover {
+    color: #87CEEB;
+}
+
+/* إخفاء القائمة الجانبية الأصلية */
+.sidebar {
+    display: none;
+}
+
+.hide-movie-sections {
+    display: none !important;
+}
+
+.hide-search-bar {
+    display: none !important;
+}
+
+/* إخفاء أقسام الأفلام */
+.hide-movie-sections {
+    display: none !important;
+}
+
+/* إخفاء شريط البحث وأسماء أقسام الأفلام عند الانتقال إلى قسم المطورين أو سياسة الخصوصية */
+.hide-in-developers, .hide-in-privacy-policy {
+    display: none !important;
+}
+
+/* إظهار شريط البحث وأسماء أقسام الأفلام عند العودة إلى الأقسام الأخرى */
+.show-in-home {
+    display: block !important;
+}
+
+.episode-button {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px; /* الحجم الموحد للنص داخل الزر */
+    text-align: center; /* توسيط النص داخل الزر */
+}
+
+.episode-item .details span {
+    font-size: 1.0em; /* الحجم الموحد لنص اسم الفيلم */
+    font-weight: bold; /* سمك الخط */
+}
+
+        .bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #000, #000); /* خلفية متدرجة */
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    animation: slideUp 0.5s ease-out forwards;
+    opacity: 0.95;
+}
+
+/* أنميشن عند الظهور */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.bottom-menu a {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+    padding: 3px 0;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.bottom-menu a:hover {
+    color: #FFD700; /* تغيير اللون عند التمرير */
+    transform: scale(1.2); /* تكبير العنصر عند التمرير */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* تأثير توهج خفيف */
+}
+
+.bottom-menu a i {
+    font-size: 15px;
+    margin-bottom: 2px;
+    transition: transform 0.4s ease;
+}
+
+.bottom-menu a:hover i {
+    transform: rotate(360deg); /* دوران الأيقونة عند التمرير */
+}
+
+/* تأثير التدرج للخلفية */
+body {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* تأثير التدرج على الأقسام */
+.section-container {
+    background: rgba(25, 25, 25, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.section-container:hover {
+    transform: scale(1.02);
+}
+
+/* تأثير عنوان القسم */
+.section-title {
+    background: linear-gradient(90deg, #ff6f00, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #ff9800;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.section-title:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* تأثير الأيقونة في عنوان القسم */
+.section-title i {
+    font-size: 1.5em;
+    color: #ff6f00;
+    margin-right: 14px;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover i {
+    color: #ff9800;
+}
+
+/* تأثير التمرير للقائمة */
+.episode-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.episode-list::-webkit-scrollbar {
+    height: 6px;
+}
+
+.episode-list::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.episode-list::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+/* تأثير الحركة على العناصر */
+.episode-item {
+    flex: 0 0 auto;
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 2px solid #333;
+}
+
+.episode-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ff9800;
+}
+
+.episode-item img {
+    width: 100%;
+    height: auto;
+    max-height: 170px;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.episode-item:hover img {
+    filter: brightness(70%);
+}
+
+/* زر مشاهدة الفيديو */
+.episode-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1a2a6c, #ff9800);
+    color: #ffffff;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.episode-button:hover {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.episode-button i {
+    margin-right: 8px;
+}
+
+/* تأثير حركة شريط البحث */
+.search-bar {
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 2px solid #666;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #888;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* تأثيرات القائمة الجانبية */
+.sidebar {
+    background-color: #1c1c1c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+/* تأثيرات التمرير في القائمة الجانبية */
+.sidebar a {
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+/* تأثيرات الرسالة الخاصة بعدم وجود نتائج */
+#noResultsMessage {
+    font-size: 1.5em;
+    color: #ff6f6f;
+    margin-top: 20px;
+}
+
+/* تأثير التمرير للأيقونة في أسفل الشاشة */
+.telegram-icon {
+    position: fixed;
+    bottom: 70px;
+    right: 370px;
+    font-size: 60px;
+    color: #87CEEB;
+    cursor: pointer;
+    transition: transform 1.3s, color 0.3s;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.2);
+    color: #1e90ff;
+}

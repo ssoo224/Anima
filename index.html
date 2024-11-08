@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شاهد ون بيس بدون اعلانات'</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- المحتوى الخاص بك هنا -->
+</head>
+<body class="dark-mode">
+    <div class="header">
+        <h1 id="pageTitle">القائمة الرئيسية</h1>
+        <div class="theme-toggle" onclick="toggleTheme()">
+           
+        </div>
+    </div>
+
+
+    </div>
+
+<!-- القائمة السفلية -->
+<div class="bottom-menu">
+    <a href="#" onclick="showSection('home')"><i class="fas fa-home"></i><br>الرئيسية</a>
+    <a href="#" onclick="showSection('developers')"><i class="fas fa-user-cog"></i><br>المطورين</a>
+    <a href="#" onclick="showSection('privacy-policy')"><i class="fas fa-shield-alt"></i><br>سياسة الخصوصية</a>
+</div>
+
+    <!-- شريط البحث -->
+    <div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="ابحث عن حلقة..." onkeyup="searchEpisodes()">
+    </div>
+
+<div class="section-container" id="home">
+    <div class="section-title">
+        <i class="fas fa-chevron-left"></i> <!-- أيقونة السهم -->
+        ㅤ الجزء الاول 
+ </div>
+    <div class="episode-list" id="actionSection">
+        <!-- الأفلام هنا -->
+                
+                
+                                <div class="episode-item" data-title="The Goat Life حياة الماعز">
+                    <img src="https://media.fushaar.com/media/2024/08/vwRkVhvJuAFz4i8udXMNkcJCztc-229x337.jpg" alt="صورة الحلقة 1">
+                    <div class="details">
+                        <span>1</span>
+                        <button class="episode-button" onclick="openModal('https://www.dropbox.com/scl/fi/mzm9xnkxu16gkjfdpmo2e/VID_20241108_150122_322.mp4?rlkey=cprdnzshwv48oyyq8quxx1qrt&st=izkhpgyh&di=1')">
+                            <i class="fas fa-play-circle"></i> شاهد الآن
+                        </button>
+                    </div>
+                </div>
+                                             <div class="episode-item" data-title="The Union الاتحاد">
+                <img src="https://media.fushaar.com/media/2024/08/kWGVB2x76Bo5GWCR31W41Pmz3PH-229x337.jpg" alt="صورة الحلقة 2">
+                <div class="details">
+                    <span>الاتحاد</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/133/The%20Union%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                        <div class="episode-item" data-title="Cobweb بيت العنكبوت">
+                <img src="https://media.fushaar.com/media/2023/08/cGXFosYUHYjjdKrOmA0bbjvzhKz-229x337.jpg" alt="صورة الحلقة 3">
+                <div class="details">
+                    <span>بيت العنكبوت</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Cobweb%202023/Cobweb%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                        <div class="episode-item" data-title="The Clean Up Crew طاقم التنظيف">
+                <img src="https://media.fushaar.com/media/2024/08/oinz9e5xvcn0hDQZyWUGPJ0oVye-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>طاقم التنظيف</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream%202/002/Art%20Of%20Eight%20Limbs%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                    <div class="episode-item" data-title="Jackpot! الجائزة الكبرى!">
+                <img src="https://media.fushaar.com/media/2024/08/fOsamTFIyGxjw1jLSKdZYxQBJOT-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الجائزة الكبرى!</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/133/Jackpot!%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Fly Me to the Moon خذني إلى القمر">
+                <img src="https://media.fushaar.com/media/2024/08/lb0XDH6LbkYwzbHTqjsUNZTLXMS-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>خذني إلى القمر</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/132/Fly%20Me%20to%20the%20Moon%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Hijack 1971 اختطاف 1971 ">
+                <img src="https://media.fushaar.com/media/2024/08/1ahGkWMv8Cehlf3hwCSlwJdXaej-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>اختطاف 1971</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Hijack%201971%202024/Hijack%201971%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="The Instigators المحرضون">
+                <img src="https://media.fushaar.com/media/2024/08/pIz9csYn1yjrzQi0BuBZNJrTMi0-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>المحرضون</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/132/The%20Instigators%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                <!-- أضف المزيد من الأفلام هنا -->
+            </div>
+        </div>
+
+<div class="section-container" id="home">
+    <div class="section-title">
+        <i class="fas fa-chevron-left"></i> <!-- أيقونة السهم -->
+        ㅤالجزء الثاني
+    </div>
+    <div class="episode-list" id="dramaSection">
+                <!-- إضافة أفلام الدراما هنا -->
+                <div class="episode-item" data-title="The Kitchen المطبخ">
+                    <img src="https://media.fushaar.com/media/2024/04/tV0hK1BiqYrYlehChv4WJXIWgmZ-229x337.jpg" alt="صورة الفيلم">
+                    <div class="details">
+                        <span>المطبخ</span>
+                        <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Kitchen%202023/The%20Kitchen%202023%201080p.mp4')">
+                            <i class="fas fa-play-circle"></i> شاهد الآن
+                        </button>
+                    </div>
+                </div>
+                
+                                                  <div class="episode-item" data-title="Borderlands الحدود">
+                <img src="https://media.fushaar.com/media/2024/08/lrlSOlTiIlTQqVqJGW4HaWjJaBJ-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الحدود</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/134/Borderlands%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Daddio داديو">
+                <img src="https://media.fushaar.com/media/2024/08/dyrCsHUhOfpuci51lHcdAnO3db0-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>داديو</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/132/Daddio%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Ghostlight ضوء الشبح">
+                <img src="https://media.fushaar.com/media/2024/08/aqSuuJdNYmx1Gsd0J8lqfzMADfE-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>ضوء الشبح</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Ghostlight%202024/Ghostlight%202024%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Teen Titans ابطال التايتنز">
+                <img src="https://media.fushaar.com/media/2018/10/AiEuNw3Lg0PIPNUQ3PIWWElwGcY-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>ابطال التايتنز انطلقوا</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Teen%20Titans%20GO!%20to%20the%20Movies%202018/Teen%20Titans%20GO!%20to%20the%20Movies%202018%20720p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="The SpongeBob Movie: Sponge on the Run سبونج بوب: الهروب">
+                <img src="https://media.fushaar.com/media/2020/11/jlJ8nDhMhCYJuzOw3f52CP1W8MW-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>سبونج بوب: الهروب</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20SpongeBob%20Movie%20Sponge%20on%20the%20Run%202020/The%20SpongeBob%20Movie%20Sponge%20on%20the%20Run%202020%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Tom and Jerry توم وجيري">
+                <img src="https://media.fushaar.com/media/2021/05/8XZI9QZ7Pm3fVkigWJPbrXCMzjq-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>توم وجيري</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Tom%20and%20Jerry%202021/Tom%20and%20Jerry%202021%20480p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Tarot تاروت">
+                <img src="https://media.fushaar.com/media/2024/07/gAEUXC37vl1SnM7PXsHTF23I2vq-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>تاروت</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Tarot%202024/Tarot%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Spider-Man: Into the Spider-Verse سبايدر مان: في عالم العنكبوت">
+                <img src="https://media.fushaar.com/media/2018/12/iiZZdoQBEYBv6id8su7ImL0oCbD-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>سبايدر مان</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Spider-Man%20Into%20the%20Spider-Verse%202018/Spider-Man%20Into%20the%20Spider-Verse%202018%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+                <!-- أضف المزيد من الأفلام هنا -->
+            </div>
+        </div>
+
+<div class="section-container" id="home">
+    <div class="section-title">
+        <i class="fas fa-chevron-left"></i> <!-- أيقونة السهم -->
+        ㅤافلام رعب
+    </div>
+    <div class="episode-list" id="romanceSection">
+                <!-- إضافة أفلام الرومانسي هنا -->
+                                  <div class="episode-item" data-title="Under Paris أسفل باريس">
+                <img src="https://media.fushaar.com/media/2024/06/qZPLK5ktRKa3CL4sKRZtj8UlPYc-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>أسفل باريس</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Under%20Paris%202024/Under%20Paris%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Kingdom of the Planet of the Apes مملكة كوكب القردة">
+                <img src="https://media.fushaar.com/media/2024/06/gKkl37BQuKTanygYQG1pyYgLVgf-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>مملكة كوكب القردة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/129/Kingdom%20of%20the%20Planet%20of%20the%20Apes%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Sijjin سجين">
+                <img src="https://media.fushaar.com/media/2024/03/dnKod1VGfTR44CCvsABd8D0ifVK-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>سجين</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/121/Sijjin%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="The Garfield Movie فيلم غارفيلد">
+                <img src="https://media.fushaar.com/media/2024/07/xYduFGuch9OwbCOEUiamml18ZoB-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>فيلم غارفيلد</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Garfield%20Movie%202024/The%20Garfield%20Movie%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Joker الجوكر">
+                <img src="https://media.fushaar.com/media/2019/10/udDclJoHjfjb8Ekgsd4FDteOkCU-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الجوكر</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Joker%202019/Joker%202019%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="The Velveteen Rabbit الأرنب المخملي">
+                <img src="https://media.fushaar.com/media/2024/06/vpnVM9B6NMmQpWeZvzLvDESb2QY-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الأرنب المخملي</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies2/Peter%20Rabbit%202%202021/Peter%20Rabbit%202%202021%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Kung Fu Panda 4 كونج فو باندا 4">
+                <img src="https://media.fushaar.com/media/2024/04/kDp1vUBnMpe8ak4rjgl3cLELqjU-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>كونج فو باندا 4</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Kung%20Fu%20Panda%204%202024/Kung%20Fu%20Panda%204%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Robot Dreams أحلام آلي">
+                <img src="https://media.fushaar.com/media/2024/02/vSzOobYVu16MogSALNg1bjTaGc-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>أحلام آلي</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Robot%20Dreams%202023/Robot%20Dreams%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                              <div class="episode-item" data-title="Sting لسعة">
+                <img src="https://media.fushaar.com/media/2024/06/zuSAZIG1PSrxFwPeAlGtg9LTwxo-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>لسعة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Sting%202024/Sting%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                            <div class="episode-item" data-title="The Ministry of Ungentlemanly Warfare وزارة الحرب الغاشمة">
+                <img src="https://media.fushaar.com/media/2024/06/8aF0iAKH9MJMYAZdi0Slg77RYa2-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>وزارة الحرب الغاشمة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Ministry%20of%20Ungentlemanly%20Warfare%202024/The%20Ministry%20of%20Ungentlemanly%20Warfare%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                        </div>
+       
+                    <div class="section-container" id="home">
+    <div class="section-title">
+        <i class="fas fa-chevron-left"></i> <!-- أيقونة السهم -->
+    ㅤالأكثر مشاهدة
+    </div>
+    <div class="episode-list" id="dramaSectiou">
+                <!-- إضافة أفلام الدراما هنا -->
+                <div class="episode-item" data-title="The Kitchen المطبخ">
+                    <img src="https://media.fushaar.com/media/2024/04/tV0hK1BiqYrYlehChv4WJXIWgmZ-229x337.jpg" alt="صورة الفيلم">
+                    <div class="details">
+                        <span>المطبخ</span>
+                        <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Kitchen%202023/The%20Kitchen%202023%201080p.mp4')">
+                            <i class="fas fa-play-circle"></i> شاهد الآن
+                        </button>
+                    </div>
+                </div>
+                
+                                                            <div class="episode-item" data-title="Mothers Instinct غريزة الأمهات">
+                <img src="https://media.fushaar.com/media/2024/06/xscMEP5VsvCLxFvrDQD84biWsLA-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>غريزة الأمهات</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Mothers'%20Instinct/Mothers'%20Instinct%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="City Hunter قناص المدينة">
+                <img src="https://media.fushaar.com/media/2024/05/cjQzJ9xFdaN9KAwu7HUImIgbc2Y-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>قناص المدينة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/City%20Hunter/City%20Hunter%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Cabrini كابريني">
+                <img src="https://media.fushaar.com/media/2024/05/rBiHiN8W4BqMFrDozemzkof7GmF-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>كابريني</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/Cabrini/Cabrini%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Humane انسانية">
+                <img src="https://media.fushaar.com/media/2024/05/ecOvKaoM1hwQbp0uTnULGrSV32e-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>انسانية</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/Humane/Humane%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Scoop فضيحة">
+                <img src="https://media.fushaar.com/media/2024/05/ib3H2ZSeVRTAmd7EtGWV31LswaZ-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>فضيحة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/Scoop/Scoop%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="The Covenant العهد">
+                <img src="https://media.fushaar.com/media/2023/05/kVG8zFFYrpyYLoHChuEeOGAd6Ru-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>العهد</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Covenant%202023/The%20Covenant%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Cash Out المصروفات">
+                <img src="https://media.fushaar.com/media/2024/05/v3youHDLigrtIis1NqTjlY8Sk38-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>المصروفات</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/Cash%20Out/Cash%20Out%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Imaginary خيالي">
+                <img src="https://media.fushaar.com/media/2024/04/9u6HEtZJdZDjPGGJq6YEuhPnoan-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>خيالي</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/123/Imaginary%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Heart of stone قلب متحجر">
+                <img src="https://media.fushaar.com/media/2023/08/vB8o2p4ETnrfiWEgVxHmHWP9yRl-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>قلب متحجر</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Heart%20of%20Stone%202023/Heart%20of%20Stone%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="The Idea of You الفكرة عنك">
+                <img src="https://media.fushaar.com/media/2024/05/Y5P4Q3q8nrruZ9aD3wXeJS2Plg-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الفكرة عنك</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/The%20Idea%20of%20You/The%20Idea%20of%20You%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Godzilla Minus On جودزيلا ناقص واحد">
+                <img src="https://media.fushaar.com/media/2024/05/hkxxMIGaiCTmrEArK7J56JTKUlB-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>جودزيلا ناقص واحد</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/Godzilla%20Minus%20One%202023/Godzilla%20Minus%20One%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="The Tearsmith صانع الدموع">
+                <img src="https://media.fushaar.com/media/2024/04/uoBHsxSgfc3PQsSn98RfnbePHOy-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>صانع الدموع</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/The%20Tearsmith/The%20Tearsmith%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="The Three Musketeers: D’Artagnan الفرسان الثلاثة">
+                <img src="https://media.fushaar.com/media/2023/08/wve9qIZ8pXrDpHy1h47cGXHjZpH-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الفرسان الثلاثة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Three%20Musketeers%20Milady%202023/The%20Three%20Musketeers%20-%20Part%20II%20Milady%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Road House حانة على الطريق">
+                <img src="https://media.fushaar.com/media/2024/04/bXi6IQiQDHD00JFio5ZSZOeRSBh-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>حانة على الطريق</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/121/Road%20House%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="The Boogeyman البعبع">
+                <img src="https://media.fushaar.com/media/2023/09/pYwZdnXVnVxAr7dx4MEK7tTK9gI-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>البعبع</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/Movies/The%20Boogeyman%202023/The%20Boogeyman%202023%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="Oddity الغرابة">
+                <img src="https://media.fushaar.com/media/2024/08/uln9Efc2vzDOl0Fue2BPs8l1WO7-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>الغرابة</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream%202/002/Oddity%202024%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+            </div>
+            
+                                                        <div class="episode-item" data-title="How to Date Billy Walsh كيفية مواعدة بيلي والش">
+                <img src="https://media.fushaar.com/media/2024/04/5qcHcoJL3otMwJPKnbV5M3a1jQd-229x337.jpg" alt="صورة الحلقة 1">
+                <div class="details">
+                    <span>كيفية مواعدة بيلي والش</span>
+                    <button class="episode-button" onclick="openModal('https://pullzonetaher.b-cdn.net/stream/122/How%20to%20Date%20Billy%20Walsh/How%20to%20Date%20Billy%20Walsh%201080p.mp4')">
+                        <i class="fas fa-play-circle"></i> شاهد الآن
+                    </button>
+                </div>
+                
+            </div>
+        </div>        
+
+     </div>
+        </div>
+        <div class="section-container" id="developers" style="display: none;">
+            <div class="section-title">مطورين الموقع</div>
+            <div class="developers-section">
+                <div class="developer-card">
+                    <img src="https://a.top4top.io/s_3172yazqq1.jpg" alt="developer 1" class="developer-image">
+                    <p>استمتع بمشاهدة أحدث الأفلام بجودة عالية وتجربة فريدة. نحن هنا لنقدم لك أفضل محتوى سينمائي. <h2>فريقنا المتخصص يسعى دائمًا لتقديم أفضل تجربة للمستخدم.</h2></p>
+                </div>
+                <div class="developer-list">
+                    <div class="developer-item">
+                        <i class="fas fa-user-cog"></i>
+                        <span>ㅤ تم تصميم الموقع من قبل المبرمج علوش</span>
+                          <div class="developer-list">
+                           </div>
+                </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container" id="privacy-policy" style="display: none;">
+            <div class="section-title">سياسة الخصوصية</div>
+            <p>في موقع <strong>شاهد فيلمك</strong>، نحرص على حماية خصوصيتك ونلتزم بالحفاظ على سرية البيانات والمعلومات الشخصية التي تقوم بمشاركتها معنا. نرجو منك قراءة هذه السياسة بعناية لفهم كيف نقوم بجمع واستخدام وحماية بياناتك.</p>
+            
+            <h2>1. المعلومات التي نقوم بجمعها</h2>
+            <p>نقوم بجمع المعلومات التي تقدمها لنا مباشرة عند استخدامك لموقعنا، مثل البيانات التي تدخلها عند التسجيل أو الاشتراك في النشرة البريدية.</p>
+            
+            <h2>2. كيف نستخدم المعلومات</h2>
+            <p>نستخدم المعلومات التي نجمعها لتخصيص تجربتك على الموقع، وتحسين خدماتنا، وتقديم محتوى مخصص بناءً على اهتماماتك.</p>
+            
+            <h2>3. مشاركة المعلومات</h2>
+            <p>لن نقوم بمشاركة معلوماتك الشخصية مع أطراف ثالثة إلا في الحالات التي تقتضيها القوانين أو لحماية حقوق الموقع ومستخدميه.</p>
+            
+            <h2>4. أمان المعلومات</h2>
+            <p>نحن ملتزمون باتخاذ التدابير التقنية والإدارية اللازمة لحماية معلوماتك الشخصية من الوصول غير المصرح به أو التسريب.</p>
+            
+            <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+            <p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك على موقعنا، وهي تتيح لنا تقديم خدمات مخصصة لك بناءً على تفضيلاتك.</p>
+            
+            <h2>6. حقوق المستخدم</h2>
+            <p>يحق لك الوصول إلى معلوماتك الشخصية، وتحديثها أو حذفها في أي وقت من خلال الإعدادات أو عن طريق التواصل معنا.</p>
+            
+            <h2>7. التعديلات على سياسة الخصوصية</h2>
+            <p>نحتفظ بالحق في تعديل سياسة الخصوصية هذه في أي وقت، وسنقوم بإخطارك بأي تغييرات مهمة من خلال تحديث هذا المستند.</p>
+            
+            <h2>8. التواصل معنا</h2>
+            <p>إذا كان لديك أي استفسارات أو طلبات بخصوص سياسة الخصوصية  <a href="mailto:hmwshy402@gmail.com">https://t.me/I_e_e_l</a>.</p>
+        </div>
+    </div>
+
+    <!-- رسالة عدم وجود نتائج -->
+    <div id="noResultsMessage">
+        لا توجد نتائج حاول مره اخرى
+    </div>
+
+    <!-- نافذة الفيديو المنبثقة -->
+    <div class="modal" id="videoModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <video id="modalVideo" controls>
+            <source src="" type="video/mp4">
+            المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+        <script src="script.js"></script>
+</body>
+</html>
