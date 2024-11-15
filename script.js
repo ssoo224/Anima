@@ -1,23 +1,19 @@
-      // استبدل 'your_token' برمز الـ API الخاص بك
-        const ipinfoToken = 'dd2570fe30711c';
-        const restrictedCountry = 'IQ'; // رمز البلد للعراق
+// استبدل 'your_token' برمز الـ API الخاص بك
+const ipinfoToken = 'dd2570fe30711c';
 
-        function checkCountry() {
-            fetch(`https://ipinfo.io/json?token=${ipinfoToken}`)
-                .then(response => response.json())
-                .then(data => {
-                    const countryCode = data.country;
+// الكود بدون التحقق من الدولة
+function checkCountry() {
+    fetch(`https://ipinfo.io/json?token=${ipinfoToken}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Access granted for all countries.');
+        })
+        .catch(error => console.error('Error fetching IP information:', error));
+}
 
-                    if (countryCode !== restrictedCountry) {
-                        document.body.innerHTML = '<h1>عذراً، الوصول إلى هذا الموقع متاح فقط في العراق.</h1>';
-                    }
-                })
-                .catch(error => console.error('Error fetching IP information:', error));
-        }
+checkCountry();
 
-        checkCountry();
-        
-        // منع الضغط المطول
+// منع الضغط المطول
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
